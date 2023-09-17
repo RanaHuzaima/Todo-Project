@@ -23,12 +23,18 @@ body{
     border-radius: 10px;
 }
 h1{
+    color: #fff;
+    background-color: #FFB000;
+    border-radius: 10px;
+    width: 100%;
     text-align: center;
 }
-form,input,textarea,button{
+form,input,textarea, .add{
     padding: 10px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 100%;
     gap: 10px;
     outline: none;
     border: 1px solid rgba(0, 0, 0, 0.557);
@@ -36,11 +42,38 @@ form,input,textarea,button{
     font-size: 15px;
     border-radius: 10px;
 }
-button{
+.add{
     background-color: #FFB000;
     color: #fff;
     cursor: pointer;
+    width: 10%;
 }
-button:hover{
-    background-color:#ffae00c2 ;
+.add:hover{
+    background-color:#e39e08 ;
+}
+.task{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border: 1px solid;
+    margin-top: 10px;
+    border-radius: 10px;padding: 10px;
+}
+.inner{
+    width: 100%;
+}
+.del{
+    background-color: #FFB000;
+    color: #fff;
+    cursor: pointer;
+    width: 20px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.73);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
