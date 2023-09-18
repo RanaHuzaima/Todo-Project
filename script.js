@@ -3,7 +3,8 @@ const title = document.getElementById("title");
 const description = document.getElementById("description");
 const addBtn = document.getElementsByClassName("add");
 const main = document.querySelector(".main");
-const task = [];
+const task = localStorage.getItem("task")?JSON.parse(localStorage.getItem("task")):[];
+addElement();
 function addElement() {
   task.forEach((value, index) => {
     const div = document.createElement("div");
@@ -23,6 +24,7 @@ function addElement() {
     btn.addEventListener("click", () => {
       removeTask();
       task.splice(index, 1);
+      localStorage.setItem("task", JSON.stringify(task));
       addElement();
     });
     div.append(btn);
@@ -42,5 +44,6 @@ form.addEventListener("submit", (e) => {
     title: title.value,
     description: description.value,
   });
+  localStorage.setItem("task", JSON.stringify(task));
   addElement();
 });
