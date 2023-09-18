@@ -15,6 +15,7 @@ body{
     background-color: #004225;
 }
 .main{
+    margin: 10px 0;
     width: 70%;
     background-color:#F5F5DC ;
     padding: 20px;
@@ -26,6 +27,7 @@ h1{
     border-radius: 10px;
     width: 100%;
     text-align: center;
+    margin-bottom: 10px;
 }
 form,input,textarea, .add{
     padding: 10px;
