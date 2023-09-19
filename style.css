@@ -47,7 +47,6 @@ form,input,textarea, .add{
     background-color: #FFB000;
     color: #fff;
     cursor: pointer;
-    width: 10%;
 }
 .add:hover{
     background-color:#e39e08 ;

@@ -40,10 +40,16 @@ function removeTask() {
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   removeTask();
+  if(title.value !== "" && description.value !== "" ){
   task.push({
     title: title.value,
     description: description.value,
-  });
+  })}
+  else {
+    alert("Please Enter Values in it")
+  }
   localStorage.setItem("task", JSON.stringify(task));
   addElement();
+  title.value = "";
+  description.value = ""
 });
